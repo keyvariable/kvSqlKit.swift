@@ -21,11 +21,12 @@ import PackageDescription
 
 let package = Package(
     name: "kvSqlKit-Swift",
+    platforms: [ .iOS(.v11), ],
     products: [
         .library(name: "kvSqlKit", targets: [ "kvSqlKit" ]),
     ],
     dependencies: [
-        .package(url: "https://github.com/keyvariable/kvKit-Swift.git", from: "1.0.0"),
+        .package(url: "https://github.com/keyvariable/kvKit-Swift.git", from: "3.0.0"),
     ],
     targets: [
         .target(name: "kvSqlKit",
