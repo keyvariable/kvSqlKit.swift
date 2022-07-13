@@ -26,7 +26,7 @@ import kvKit
 
 
 /// Provides methods for builders of queries having *RETURNING* clause.
-public protocol KvSqlReturning : class {
+public protocol KvSqlReturning : AnyObject {
 
     /// Appends *RETURNING* clause to the receiver.
     @discardableResult

@@ -24,7 +24,7 @@
 
 
 /// Provides methods for builders of queries having *WHERE* clause.
-public protocol KvSqlWhere : class {
+public protocol KvSqlWhere : AnyObject {
 
     /// Appends *WHERE* clause to the receiver.
     @discardableResult

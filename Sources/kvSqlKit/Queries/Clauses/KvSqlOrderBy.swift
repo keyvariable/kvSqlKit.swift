@@ -26,7 +26,7 @@ import kvKit
 
 
 /// Provides methods for builders of queries having *ORDER BY* clause.
-public protocol KvSqlOrderBy : class {
+public protocol KvSqlOrderBy : AnyObject {
 
     /// Appends *ORDER BY* clause to the receiver.
     @discardableResult

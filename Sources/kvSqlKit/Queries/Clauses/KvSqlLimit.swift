@@ -24,7 +24,7 @@
 
 
 /// Provides methods for builders of queries having *LIMIT* clause.
-public protocol KvSqlLimit : class {
+public protocol KvSqlLimit : AnyObject {
 
     /// Appends *LIMIT* clause to the receiver.
     @discardableResult
