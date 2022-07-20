@@ -43,6 +43,8 @@ public struct KvSqlArgumentRvalue : KvSqlRvalue {
 
 
     init(_ index: UInt) {
+        assert(index >= 1, "Indices of SQL query arguments must start from 1")
+        
         self.index = index
     }
 
