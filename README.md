@@ -53,7 +53,7 @@ This package is crossplatform.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/keyvariable/kvSqlKit-Swift.git", from: "0.1.0"),
+    .package(url: "https://github.com/keyvariable/kvSqlKit-Swift.git", from: "0.1.2"),
 ]
 ```
 
