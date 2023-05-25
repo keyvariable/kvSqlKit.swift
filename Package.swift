@@ -19,18 +19,21 @@
 
 import PackageDescription
 
+
+let targets: [Target] = [
+    .target(name: "kvSqlKit",
+            dependencies: [ .product(name: "kvKit", package: "kvKit.swift") ]),
+    .testTarget(name: "kvSqlKitTests", dependencies: [ "kvSqlKit" ]),
+]
+
 let package = Package(
-    name: "kvSqlKit-Swift",
+    name: "kvSqlKit.swift",
     platforms: [ .iOS(.v11), ],
     products: [
         .library(name: "kvSqlKit", targets: [ "kvSqlKit" ]),
     ],
     dependencies: [
-        .package(url: "https://github.com/keyvariable/kvKit-Swift.git", from: "3.0.0"),
+        .package(url: "https://github.com/keyvariable/kvKit.swift.git", from: "4.0.0"),
     ],
-    targets: [
-        .target(name: "kvSqlKit",
-                dependencies: [ .product(name: "kvKit", package: "kvKit-Swift") ]),
-        .testTarget(name: "kvSqlKitTests", dependencies: [ "kvSqlKit" ]),
-    ]
+    targets: targets
 )
