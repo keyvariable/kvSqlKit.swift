@@ -1,4 +1,4 @@
-# kvSqlKit-Swift
+# kvSqlKit.swift
 
 ![Swift 5.2](https://img.shields.io/badge/swift-5.2-green.svg)
 ![Linux](https://img.shields.io/badge/os-linux-green.svg)
@@ -37,7 +37,7 @@ let query = KvSQL.select(items.*, from: items).orderBy(items.count.desc()).sql
 
 #### More Examples
 
-See [Tests](https://github.com/keyvariable/kvSqlKit-Swift/tree/main/Tests/kvSqlKitTests) for more examples.
+See [Tests](https://github.com/keyvariable/kvSqlKit.swift/tree/main/Tests/kvSqlKitTests) for more examples.
 
 
 ## Supported Platforms
@@ -53,7 +53,7 @@ This package is crossplatform.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/keyvariable/kvSqlKit-Swift.git", from: "0.1.2"),
+    .package(url: "https://github.com/keyvariable/kvSqlKit.swift.git", from: "0.1.2"),
 ]
 ```
 
@@ -61,7 +61,7 @@ dependencies: [
 
 ```swift
 dependencies: [
-    .product(name: "kvSqlKit", package: "kvSqlKit-Swift"),
+    .product(name: "kvSqlKit", package: "kvSqlKit.swift"),
 ]
 ```
 

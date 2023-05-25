@@ -27,7 +27,7 @@ let targets: [Target] = [
 ]
 
 let package = Package(
-    name: "kvSqlKit-Swift",
+    name: "kvSqlKit.swift",
     platforms: [ .iOS(.v11), ],
     products: [
         .library(name: "kvSqlKit", targets: [ "kvSqlKit" ]),
