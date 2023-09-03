@@ -30,15 +30,7 @@ import XCTest
 
 final class KvSqlKitTests : XCTestCase {
 
-    static var allTests = [
-        ("CREATE TABLE", testCreateTable),
-        ("DELETE", testDelete),
-        ("INSERT", testInsert),
-        ("SELECT", testSelect),
-        ("UPDATE", testUpdate),
-    ]
-
-
+    // MARK: - testCreateTable()
 
     func testCreateTable() {
         XCTAssertEqual(
@@ -48,6 +40,8 @@ final class KvSqlKitTests : XCTestCase {
     }
 
 
+
+    // MARK: - testDelete()
 
     func testDelete() {
         // Simple test.
@@ -64,6 +58,8 @@ final class KvSqlKitTests : XCTestCase {
     }
 
 
+
+    // MARK: - testInsert()
 
     func testInsert() {
         let optionalString: (some: String?, none: String?) = ("some", nil)
@@ -100,6 +96,8 @@ final class KvSqlKitTests : XCTestCase {
     }
 
 
+
+    // MARK: - testSelect()
 
     func testSelect() {
         let label = "label"
@@ -187,6 +185,8 @@ final class KvSqlKitTests : XCTestCase {
 
 
 
+    // MARK: - testUpdate()
+
     func testUpdate() {
         // Basic test.
         XCTAssertEqual(
@@ -227,6 +227,14 @@ final class KvSqlKitTests : XCTestCase {
 
 
 
+    // MARK: - Auxiliaries
+
+    private let items = Items()
+
+
+
+    // MARK: - .Items
+
     /// A test table.
     private struct Items : KvSqlTable {
 
@@ -241,9 +249,5 @@ final class KvSqlKitTests : XCTestCase {
         let comment = Column("comment", of: .text)
 
     }
-
-
-
-    private let items = Items()
 
 }
