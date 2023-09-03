@@ -49,10 +49,10 @@ This package is cross-platform.
 #### Target Dependencies:
 ```swift
 .product(name: "kvSqlKit", package: "kvSqlKit.swift")
+```
 #### Import:
 ```swift
 import kvSqlKit
-```
 ```
 
 
