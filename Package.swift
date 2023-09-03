@@ -20,11 +20,8 @@
 import PackageDescription
 
 
-let targets: [Target] = [
-    .target(name: "kvSqlKit",
-            dependencies: [ .product(name: "kvKit", package: "kvKit.swift") ]),
-    .testTarget(name: "kvSqlKitTests", dependencies: [ "kvSqlKit" ]),
-]
+let swiftSettings: [SwiftSetting]? = nil
+
 
 let package = Package(
     name: "kvSqlKit.swift",
@@ -35,5 +32,10 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/keyvariable/kvKit.swift.git", from: "4.2.0"),
     ],
-    targets: targets
+    targets: [
+        .target(name: "kvSqlKit",
+                dependencies: [ .product(name: "kvKit", package: "kvKit.swift") ],
+                swiftSettings: swiftSettings),
+        .testTarget(name: "kvSqlKitTests", dependencies: [ "kvSqlKit" ], swiftSettings: swiftSettings),
+    ]
 )
