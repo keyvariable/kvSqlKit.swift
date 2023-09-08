@@ -38,13 +38,14 @@ See [Tests](./Tests/kvSqlKitTests) for more examples.
 ## Supported Platforms
 
 This package is cross-platform.
+Package is built and the unit-tests are passed on macOS, Linux (Ubuntu 22.04) and Windows (10 x64).
 
 
 ## Getting Started
 
 #### Package Dependencies:
 ```swift
-.package(url: "https://github.com/keyvariable/kvSqlKit.swift.git", from: "0.3.0")
+.package(url: "https://github.com/keyvariable/kvSqlKit.swift.git", from: "0.3.1")
 ```
 #### Target Dependencies:
 ```swift
@@ -59,4 +60,3 @@ import kvSqlKit
 ## Authors
 
 - Svyatoslav Popov ([@sdpopov-keyvariable](https://github.com/sdpopov-keyvariable), [info@keyvar.com](mailto:info@keyvar.com)).
-
