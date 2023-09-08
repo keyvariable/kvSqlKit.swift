@@ -30,7 +30,7 @@ let package = Package(
         .library(name: "kvSqlKit", targets: [ "kvSqlKit" ]),
     ],
     dependencies: [
-        .package(url: "https://github.com/keyvariable/kvKit.swift.git", from: "4.2.0"),
+        .package(url: "https://github.com/keyvariable/kvKit.swift.git", from: "4.3.0"),
     ],
     targets: [
         .target(name: "kvSqlKit",
